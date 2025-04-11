@@ -11,7 +11,7 @@ public class Test {
 
     public static void main(String[] args) {
 
-        try (Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@oracle.fiap.com.br:1521:ORCL", "rm553477", "220605");) {
+        try (Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@oracle.fiap.com.br:1521:ORCL", "rm553477", "");) {
 
             // CLIENTE
             ClienteDAO clienteDAO = new ClienteDAOImpl(conn);
